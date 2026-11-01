@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "title": {
+    "en": "xuedipiaofei hooks",
+    "zh": "xuedipiaofei hooks"
+  },
+  "description": {
+    "en": "Small, focused DSH plugins.",
+    "zh": "一些专注单一用途的 DSH 插件。"
+  },
+  "metadata": {
+    "categories": {
+      "workflow": {
+        "title": {
+          "en": "Workflow & Automation",
+          "zh": "工作流与自动化"
+        }
+      }
+    },
+    "labels": {
+      "hooks": {
+        "title": {
+          "en": "Lifecycle hooks",
+          "zh": "生命周期 hooks"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-hooks-lite",
+      "title": {
+        "en": "Hooks Lite",
+        "zh": "轻量 Hooks"
+      },
+      "description": {
+        "en": "Config-driven lifecycle hooks for DSH: block or observe tool calls, and react to completed turns, messages, and title changes with shell commands.",
+        "zh": "配置驱动的 DSH 生命周期 hooks：拦截或观察工具调用，并对回合完成、用户消息和标题变化执行 shell 命令。"
+      },
+      "author": "xuedipiaofei",
+      "icon": "../icon.svg",
+      "homepage": "https://github.com/xuedipiaofei/dsh-hooks-lite",
+      "repository": {
+        "url": "https://github.com/xuedipiaofei/dsh-hooks-lite"
+      },
+      "metadata": {
+        "category": "workflow",
+        "keywords": [
+          "hooks",
+          "lifecycle",
+          "automation",
+          "pre-tool",
+          "post-tool"
+        ],
+        "labels": [
+          "hooks"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1793542781,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/xuedipiaofei/dsh-hooks-lite",
+            "commit": "PENDING"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.3 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}
