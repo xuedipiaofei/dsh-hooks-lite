@@ -1,0 +1,29 @@
+# dsh-hooks-lite — lightweight config-driven lifecycle hooks.
+#
+# Add hooks in the profile's cordis.patch.yml next to this row, for example:
+#
+#   - id: dsh-hooks-lite
+#     name: dsh-hooks-lite
+#     config:
+#       hooks:
+#         - id: lint-after-edit
+#           on: post-tool
+#           tools: [edit, write]
+#           run: npm run lint -- --quiet
+#           timeoutMs: 30000
+#         - id: guard-destructive
+#           on: pre-tool
+#           tools: [bash, pwsh]
+#           match:
+#             args.command: 'rm\\s+-rf'
+#           run: node guard.mjs
+#         - id: notify-done
+#           on: turn/end
+#           when: completed
+#           run: node notify.mjs
+#
+# Hook commands are trusted host configuration. They run with the host
+# process's permissions.
+- insert:
+    - id: dsh-hooks-lite
+      name: dsh-hooks-lite

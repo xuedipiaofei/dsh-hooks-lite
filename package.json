@@ -1,0 +1,40 @@
+{
+  "name": "dsh-hooks-lite",
+  "version": "0.1.0",
+  "description": "Lightweight, config-driven lifecycle hooks for DeepSeek Harness: run shell commands around tool calls and session events with a JSON payload on stdin.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "hooks",
+    "lifecycle",
+    "PreToolUse",
+    "PostToolUse",
+    "automation"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.3 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "check": "node --check lib/config.js && node --check lib/runner.js && node --check lib/index.js"
+  }
+}
