@@ -63,7 +63,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/xuedipiaofei/dsh-hooks-lite",
-            "commit": "PENDING"
+            "commit": "906de27e7d2a2aaf7fcc1faa56856dd5dea80e9b"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.3 <0.3.0"
