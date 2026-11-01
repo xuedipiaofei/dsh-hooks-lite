@@ -15,7 +15,7 @@
 #           on: pre-tool
 #           tools: [bash, pwsh]
 #           match:
-#             args.command: 'rm\\s+-rf'
+#             args.command: 'rm\s+-rf'
 #           run: node guard.mjs
 #         - id: notify-done
 #           on: turn/end
