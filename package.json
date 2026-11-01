@@ -36,5 +36,14 @@
   "scripts": {
     "test": "node --test test/",
     "check": "node --check lib/config.js && node --check lib/runner.js && node --check lib/index.js"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuedipiaofei/dsh-hooks-lite.git"
+  },
+  "homepage": "https://github.com/xuedipiaofei/dsh-hooks-lite#readme",
+  "bugs": {
+    "url": "https://github.com/xuedipiaofei/dsh-hooks-lite/issues"
+  },
+  "author": "xuedipiaofei"
 }
